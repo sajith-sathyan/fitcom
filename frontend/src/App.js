@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import './App.css'
-import Workout from "./Pages/Workout";
 import Nutrition from "./Pages/ Nutrition";
 import Goal from "./Pages/Goal";
 import Register from "./Pages/Register";
+import Workout from "./Pages/Workouts";
 function App() {
   return (
     <Router>

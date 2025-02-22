@@ -9,7 +9,7 @@ function SearchBox({ onSearch }) {
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      onSearch(searchTerm); // Send input to parent when Enter is pressed
+      onSearch(searchTerm);
     }
   };
 
@@ -26,7 +26,7 @@ function SearchBox({ onSearch }) {
         value={searchTerm}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
-        className="search-input" // ✅ Add this line
+        className="search-input" 
       />
       {searchTerm && (
         <button className="clear-button" onClick={clearSearch}>

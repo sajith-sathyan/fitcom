@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import SearchBox from './SearchBox';
-import fetchWorkouts from '../Api/workoutApi';
+import SearchBox from '../Input/SearchBox';
+import fetchWorkouts from '../../Api/workoutApi';
 
 function AllWorkout() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -21,7 +21,7 @@ function AllWorkout() {
         console.log(data);
         setWorkouts(data);
     };
-  
+
     return (
         <div className="all-workout-container">
             <SearchBox onSearch={handleSearch} />
