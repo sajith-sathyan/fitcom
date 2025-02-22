@@ -1,20 +1,24 @@
-// src/App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import Router and Route components
-import Welcome from "./Pages/WelcomePage";
-import AddDeitInfoPage from "./Pages/AddDeitInfoPage";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import './App.css'
+import Workout from "./Pages/Workout";
+import Nutrition from "./Pages/ Nutrition";
+import Goal from "./Pages/Goal";
+import Register from "./Pages/Register";
 function App() {
   return (
     <Router>
-      {" "}
-      {/* Wrap everything inside Router */}
       <Routes>
-        {/* Define the route for the WelcomePage */}
-        <Route path="/" element={<Welcome />} />
+        {/* <Route path="/" element={<Welcome />} />
+        <Route path="/add-diet-info" element={<AddDeitInfoPage />} /> */}
+        <Route path="/Register" element={<Register />} />
 
-        {/* Define the route for the AddDeitInfoPage */}
-        <Route path="/add-diet-info" element={<AddDeitInfoPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/workout" element={<Workout />} />
+        <Route path="/nutrition" element={<Nutrition />} />
+        <Route path="/goals" element={<Goal />} />
+
       </Routes>
     </Router>
   );
