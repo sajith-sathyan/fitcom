@@ -1,0 +1,19 @@
+.pagination-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: black;
+    color: white;
+}

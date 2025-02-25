@@ -1,0 +1,45 @@
+.workout-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+
+.workout-card {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.workout-card h5 {
+    margin: 0;
+    color: black;
+    /* Default text color */
+}
+
+.workout-card.active {
+    background-color: #ff5722;
+    /* Active background color */
+    color: white;
+    /* Change text color */
+    border-color: #e64a19;
+}
+
+.workout-card.active h5 {
+    color: white;
+    /* Ensures text color updates */
+}
+
+.workout-card:hover {
+    background-color: #ff7043;
+    /* Slightly lighter orange on hover */
+    color: white;
+}

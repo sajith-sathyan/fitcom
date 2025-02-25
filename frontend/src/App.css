@@ -1,480 +1,15 @@
-/* Reset some default browser styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* Set base font size and body styling */
-
-html {
-    font-size: 16px;
-    /* Adjust for responsive scaling if necessary */
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    /* Use a modern, clean font */
-    background-color: #f7f8fa;
-    /* Light background for a fresh, clean look */
-    color: #333;
-    /* Neutral color for text */
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-/* Global link styles */
-
-a {
-    color: #2d9cdb;
-    /* A bright blue for links to stand out */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #1a7bbf;
-}
-
-
-/* Utility classes for spacing and layout */
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-
-/* Button styling */
-
-button {
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button.primary {
-    background-color: #2d9cdb;
-    color: #fff;
-}
-
-button.primary:hover {
-    background-color: #1a7bbf;
-}
-
-
-/* Base styles for headings and text */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    color: #222;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-
-/* Custom scroll bar styling (optional) */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #2d9cdb;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #1a7bbf;
-}
-
-
-/* Utility classes for margin and padding */
-
-.mt-1 {
-    margin-top: 0.25rem;
-}
-
-.mt-2 {
-    margin-top: 0.5rem;
-}
-
-.mt-3 {
-    margin-top: 1rem;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-.mb-1 {
-    margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-    margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-    margin-bottom: 1rem;
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem;
-}
-
-.p-1 {
-    padding: 0.25rem;
-}
-
-.p-2 {
-    padding: 0.5rem;
-}
-
-.p-3 {
-    padding: 1rem;
-}
-
-.p-4 {
-    padding: 1.5rem;
-}
-
-
-/* Flexbox utilities for layout */
-
-.flex {
-    display: flex;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* Image styles */
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-/* Footer styling */
-
-footer {
-    text-align: center;
-    padding: 1.5rem 0;
-    background-color: #333;
-    color: #f7f8fa;
-}
-
-footer a {
-    color: #2d9cdb;
-}
-
-footer a:hover {
-    color: #1a7bbf;
-}
-
-
-/*  ---------------------------------------------  NAVBAR -----------------------------------------------*/
-
-
-/* General Navbar Styles */
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #008080;
-    padding: 1rem 2rem;
-    font-family: Arial, sans-serif;
-    position: fixed;
-    /* Changed from relative to fixed */
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* Ensures the navbar spans the full width of the screen */
-    z-index: 1000;
-    /* Keeps the navbar above other content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds a shadow for better visibility */
-}
-
-.navbar-logo {
-    font-size: 1.5rem;
-    color: #e64a19;
-    font-weight: bold;
-}
-
-
-/* Adjust the navbar-links for desktop view */
-
-.navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    display: inline;
-}
-
-.navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.navbar-links a:hover {
-    color: #ffd700;
-}
-
-
-/* Mobile and Tablet View Styling (Up to 1024px) */
-
-@media (max-width: 1024px) {
-    .navbar-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #008080;
-        width: 200px;
-        padding: 1rem;
-        border-radius: 8px;
-    }
-    .navbar-links.open {
-        display: flex;
-    }
-    .menu-toggle {
-        display: inline-block;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin-left: auto;
-    }
-}
-
-
-avbar-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-/* .navbar-links a:hover {
-    color: #ffd700;
-} */
-
-/* Active Link Color */
-.navbar-links a.active {
-    color: #ffd700; /* Change to your preferred color */
-    /* font-weight: bold; */
-/* Optional underline effect */
-}
-
-
-/* Hide the menu-toggle button on larger screens */
-
-@media (min-width: 1025px) {
-    .menu-toggle {
-        display: none;
-    }
-}
-
-.main-content {
-    margin-top: 60px;
-    /* Matches the height of the navbar */
-    padding: 1rem;
-}
-/*  --------------------------------------------- register -----------------------------------------------*/
-
-.register-main-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.register-card{
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(19, 19, 19, 0.4);
-    width: 500px;
-    padding: 20px;
-    height: 600px;
-    margin: 20px auto;
-}
-.register-h1{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Register.css */
-.register-main {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-  }
-  
-  .container {
-    width: 400px;
-  }
-  
-  .enterarea {
-    position: relative;
-    height: 50px;
-    line-height: 50px;
-  }
-  
-  input {
-    position: absolute;
-    width: 100%;    
-    outline: none;
-    font-size: 1rem;
-    padding: 0 15px;
-    line-height: 40px;
-    border-radius: 5px;
-    border: 1px solid #090909;
-    background: transparent;
-    transition: 0.1s ease;
-    z-index: 1;
-  }
-  
-  .lebelline {
-    position: absolute;
-    font-size: 1rem;
-    color: #050606;
-    padding: 0 10px;
-    margin: 0 10px;
-    background-color: #ffffff;
-    transition: 0.2s ease;
-  }
-  
-  input:focus,
-  input:valid {
-    color: #080808;
-    border: 1px solid #66ff00;
-  }
-  
-  input:focus + .lebelline,
-  input:valid + .lebelline {
-    color: #00ff00;
-    height: 20px;
-    line-height: 20px;
-    transform: translate(-10px, -12px) scale(0.88);
-    z-index: 1;
-  }
-/*  ---------------------------------------------  CARD -----------------------------------------------*/
-
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-}
-
-.card-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card-header h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.card-item {
-    margin-bottom: 20px;
-}
-
-.card-item h3 {
-    font-size: 18px;
-    color: #555;
-}
-
-.card-item p {
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-}
-
-
-/* Optional: Style for a button or any action like "Track More" */
-
-.card-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card-button:hover {
-    background-color: #0056b3;
+  font-family: "Inter", sans-serif;
 }
 
 
@@ -484,28 +19,28 @@ avbar-links a {
 /* src/components/CaloriesChart.css */
 
 .calories-chart {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
 }
 
 .circle-chart {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .circle-chart-bg {
-    fill: none;
-    stroke: #e6e6e6;
-    stroke-width: 2;
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 2;
 }
 
 .circle-chart-fill {
-    fill: none;
-    stroke-width: 2;
-    stroke-linecap: round;
-    transition: stroke-dasharray 0.5s ease;
-    stroke: #4caf50;
-    /* Color for the filled portion */
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease;
+  stroke: #4caf50;
+  /* Color for the filled portion */
 }
 
 
@@ -515,256 +50,131 @@ avbar-links a {
 /* src/components/CaloriesInfo.css */
 
 .calories-info {
-    text-align: left;
-    font-size: 16px;
+  text-align: left;
+  font-size: 16px;
 }
 
 .calories-info p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .calories-info strong {
-    color: #333;
+  color: #333;
 }
 
 
 /*  ---------------------------------------------  CalorieCard.css -----------------------------------------------*/
 
 
-/* src/components/CalorieCard.css */
 
 .calories {
-    background-color: #cfcfcf;
-    border-radius: 10px;
-    box-shadow: 0 4px 18px rgba(19, 19, 19, 0.1);
-    width: 800px;
-    padding: 20px;
-    margin: 20px auto;
+  background-color: #cfcfcf;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(19, 19, 19, 0.1);
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
 }
 
 .calories-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
 /* Responsive adjustments */
 
 @media (max-width: 1200px) {
-    /* Laptops */
-    .calories {
-        width: 600px;
-    }
+
+  /* Laptops */
+  .calories {
+    width: 600px;
+  }
 }
 
 @media (max-width: 768px) {
-    /* Tablets */
-    .calories {
-        width: 90%;
-        padding: 15px;
-    }
-    .calories-container {
-        flex-direction: column;
-    }
+
+  /* Tablets */
+  .calories {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .calories-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
-    /* Smartphones */
-    .calories {
-        width: 100%;
-        padding: 10px;
-    }
-}
 
-
-/*  ---------------------------------------------  Banner.css -----------------------------------------------*/
-
-
-/* src/styles.css or your relevant CSS file */
-
-.banner {
-    width: 800px;
-    margin: 20px auto;
-    height: 300px;
-    overflow: hidden;
-}
-
-.banner-image {
+  /* Smartphones */
+  .calories {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    padding: 10px;
+  }
 }
 
-
-/* Responsive adjustments */
-
-@media (max-width: 1200px) {
-    /* Laptops */
-    .banner {
-        width: 600px;
-        height: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Tablets */
-    .banner {
-        width: 90%;
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Smartphones */
-    .banner {
-        width: 100%;
-        height: 150px;
-    }
-}
 
 /*  ---------------------------------------------  MacrosCard.css -----------------------------------------------*/
 
-.macroscard{
-    width: 800px;
-    margin: 20px auto;
-    height: 300px;
-    box-shadow: 0 4px 18px rgba(19, 19, 19, 0.1);
-    border-radius: 10px;
-    background:#2d9cdb;
-}
-/*  ---------------------------------------------  workout page.css -----------------------------------------------*/
-
-.workout-container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    position: relative;
+.macroscard {
+  width: 800px;
+  margin: 20px auto;
+  height: 300px;
+  box-shadow: 0 4px 18px rgba(19, 19, 19, 0.1);
+  border-radius: 10px;
+  background: #2d9cdb;
 }
 
 
 
-/*  ---------------------------------------------  Workoutcard.css -----------------------------------------------*/
 
 
 
-.workout-card {
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid black;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    margin: 20px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.workout-card h5 {
-    margin: 0;
-    color: black; /* Default text color */
-}
-
-.workout-card.active {
-    background-color: #ff5722; /* Active background color */
-    color: white; /* Change text color */
-    border-color: #e64a19;
-}
-
-.workout-card.active h5 {
-    color: white; /* Ensures text color updates */
-}
-
-.workout-card:hover {
-    background-color: #ff7043; /* Slightly lighter orange on hover */
-    color: white;
-}
 
 /*  ---------------------------------------------  all-workout.css -----------------------------------------------*/
 
 .all-workout-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-
-/*  ---------------------------------------------  SearchBox.css -----------------------------------------------*/
-
-.search-container {
-    display: flex;
-    align-items: center;    
-    background-color: white;
-    border: 1px solid black;  /* Default: Black */
-    border-radius: 25px;
-    padding: 8px 15px;
-    width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* When input is active (has text), change border color */
-.search-container.active {
-    border-color: #ff5722;  
-    box-shadow: 0 8px 24px rgba(255, 87, 34, 0.4);
-}
-
-.search-input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-size: 16px;
-    padding: 5px;
-    color: #333;
-    background: none;
-}
-
-.search-input::placeholder {
-    color: #aaa;
-}
-
-.clear-button {
-    background: none;
-    border: none;
-    color: #ff5722;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 5px;
-}
-
-.clear-button:hover {
-    color: #e64a19;
-}
-
-
-/*  ---------------------------------------------  Goal.css -----------------------------------------------*/
 
 .goal-main-container {
-    display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;  /* Centers vertically */
-    height: 100vh;  /* Full viewport height */
-    margin: 0;  /* Remove margin if needed */
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  height: 100vh;
+  /* Full viewport height */
+  margin: 0;
+  /* Remove margin if needed */
 }
+
 .goal-card {
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid black;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    margin: 20px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .goal-card:hover {
-    background-color: #ff7043; /* Change background on hover */
-    color: white; /* Change text color on hover */
+  background-color: #ff7043;
+  /* Change background on hover */
+  color: white;
+  /* Change text color on hover */
 }
 
 .goal-card:hover h5 {
-    color: white; /* Ensure <h5> text color changes */
+  color: white;
+  /* Ensure <h5> text color changes */
 }
