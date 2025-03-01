@@ -7,6 +7,8 @@ import Goal from "./Pages/Goal/Goal";
 import Register from "./Pages/Register/Register";
 import Workout from "./Pages/Workouts/Workouts";
 import GoalSelection from "./pages/GoalSelection/GoalSelection";
+import TestBuild from "./pages/TestBuild/TestBuild";
+import Sync from "./pages/sync-devices/Sync";
 function App() {
   return (
     <Router>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/workout" element={<Workout />} />
         <Route path="/nutrition" element={<Nutrition />} />
         <Route path="/goals" element={<Goal />} />
+        <Route path="/sync" element={<Sync />} />
+        <Route path="/test" element={<TestBuild />} />
       </Routes>
     </Router>
   );

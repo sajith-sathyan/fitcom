@@ -1,6 +1,6 @@
 export const WorkoutRecommendationOptions = [
   {
-    question: "What is your primary fitness goal?",
+    question: "What is your fitness goal?",
     options: [
       "Lose weight",
       "Maintain weight",
@@ -14,62 +14,51 @@ export const WorkoutRecommendationOptions = [
   {
     question: "Why did you choose this goal?",
     options: [
-      "I want to feel better and more energetic",
-      "My doctor recommended it",
-      "I need to improve my athletic performance",
-      "I want to change my body composition",
+      "Feel better & energetic",
+      "Doctor recommended",
+      "Improve athletic performance",
+      "Change body composition",
       "Other",
     ],
   },
   {
-    question: "How active are you on a daily basis?",
-    options: ["Not very active", "Lightly active", "Active", "Very active"],
+    question: "How active are you daily?",
+    options: ["Not very", "Lightly", "Active", "Very active"],
   },
   {
-    question:
-      "Do you have any medical conditions or injuries we should consider?",
-    options: ["No", "Yes (I will provide details)"],
+    question: "Do you have medical conditions or injuries?",
+    options: ["No", "Yes (I'll specify)"],
   },
   {
-    question: "How many days per week can you commit to working out?",
-    options: ["1-2 days", "3-4 days", "5-6 days", "Every day"],
+    question: "How many workout days per week?",
+    options: ["1-2", "3-4", "5-6", "Every day"],
   },
   {
-    question: "What type of exercises do you enjoy the most?",
-    options: ["Cardio", "Strength training", "Calisthenics", "Yoga", "Mixed"],
+    question: "What exercises do you enjoy?",
+    options: ["Cardio", "Strength", "Calisthenics", "Yoga", "Mixed"],
   },
   {
-    question: "Do you have access to a gym or workout equipment at home?",
-    options: [
-      "Yes, I go to a gym",
-      "Yes, I have equipment at home",
-      "No, I prefer bodyweight exercises",
-    ],
+    question: "Do you have gym or home equipment?",
+    options: ["Gym", "Home equipment", "Bodyweight only"],
   },
   {
-    question:
-      "Would you prefer bodyweight workouts, weight training, or a mix of both?",
-    options: ["Bodyweight", "Weight training", "Mix of both"],
+    question: "Bodyweight, weight training, or both?",
+    options: ["Bodyweight", "Weights", "Both"],
   },
   {
-    question: "Are there any exercises you absolutely dislike?",
-    options: [
-      "No, I'm open to all exercises",
-      "Yes, I have specific exercises I want to avoid",
-    ],
+    question: "Any exercises you dislike?",
+    options: ["No, I'm open", "Yes, I have preferences"],
   },
   {
-    question: "Would you like to include flexibility and mobility training?",
+    question: "Include flexibility & mobility training?",
     options: ["Yes", "No"],
   },
   {
-    question:
-      "Do you prefer high-intensity workouts (HIIT) or steady-paced training?",
-    options: ["HIIT", "Steady-paced training", "Both"],
+    question: "HIIT or steady-paced workouts?",
+    options: ["HIIT", "Steady", "Both"],
   },
   {
-    question:
-      "Would you like to receive nutrition guidance along with your workout plan?",
+    question: "Want nutrition guidance too?",
     options: ["Yes", "No"],
   },
 ];

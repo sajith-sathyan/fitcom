@@ -1,0 +1,77 @@
+/* Centering the entire page */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+/* Form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Properly align text */
+.text-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text-container h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.text-container p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Input fields */
+.input-field {
+    padding: 10px;
+    border: 1px solid #121111;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    background-color: #F7F8FA;
+}
+
+/* Specific styling for weight and goal weight inputs */
+.weight-input,
+.goal-input {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Focus effect */
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Blue text for h6 */
+.blue-text {
+    color: #007bff;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}

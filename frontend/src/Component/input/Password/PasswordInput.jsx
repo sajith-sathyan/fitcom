@@ -3,10 +3,10 @@ import "./Style.css";
 
 function PasswordInput() {
   return (
-    <div>
-      <div id="register" className="enterarea">
-        <input type="password" required />
-        <div className="lebelline">Enter your password</div>
+    <div className="password-container">
+      <div className="password-enterarea">
+        <input type="password" required className="password-input" />
+        <div className="password-lebelline">Enter your password</div>
       </div>
     </div>
   );

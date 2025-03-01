@@ -1,10 +1,10 @@
-.enterarea {
+.email-enterarea {
   position: relative;
   height: 50px;
   line-height: 50px;
 }
 
-input {
+.email-input {
   position: absolute;
   width: 100%;
   outline: none;
@@ -18,25 +18,25 @@ input {
   z-index: 1;
 }
 
-.lebelline {
+.email-lebelline {
   position: absolute;
   font-size: 1rem;
-  color: #050606;
+  color: #666;
   padding: 0 10px;
   margin: 0 10px;
-  background-color: #ffffff;
+  background-color: #F7F8FA;
   transition: 0.2s ease;
 }
 
-input:focus,
-input:valid {
+.email-input:focus,
+.email-input:valid {
   color: #080808;
   border: 1px solid #66ff00;
 }
 
-input:focus+.lebelline,
-input:valid+.lebelline {
-  color: #00ff00;
+.email-input:focus+.email-lebelline,
+.email-input:valid+.email-lebelline {
+  color: #5c5e5c;
   height: 20px;
   line-height: 20px;
   transform: translate(-10px, -12px) scale(0.88);

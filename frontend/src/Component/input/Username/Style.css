@@ -1,10 +1,10 @@
-.enterarea {
+.username-enterarea {
   position: relative;
   height: 50px;
   line-height: 50px;
 }
 
-input {
+.username-input {
   position: absolute;
   width: 100%;
   outline: none;
@@ -18,25 +18,24 @@ input {
   z-index: 1;
 }
 
-.lebelline {
+.username-lebelline {
   position: absolute;
   font-size: 1rem;
   color: #666;
-  /* Change this to your preferred default color */
   padding: 0 10px;
   margin: 0 10px;
-  background-color: #ffffff;
+  background-color: #F7F8FA;
   transition: 0.2s ease;
 }
 
-input:focus,
-input:valid {
+.username-input:focus,
+.username-input:valid {
   color: #080808;
   border: 1px solid #66ff00;
 }
 
-input:focus+.lebelline,
-input:valid+.lebelline {
+.username-input:focus+.username-lebelline,
+.username-input:valid+.username-lebelline {
   color: #5c5e5c;
   height: 20px;
   line-height: 20px;

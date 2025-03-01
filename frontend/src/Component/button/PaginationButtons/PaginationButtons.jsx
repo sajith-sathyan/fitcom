@@ -1,25 +1,26 @@
 import React from "react";
 import "./Style.css";
 
-const PaginationButtons = ({ onPrevious, onNext, currentPage, totalPages }) => {
+function PaginationButtons({
+  onPrevious,
+  onNext,
+  disablePrevious,
+  disableNext,
+}) {
   return (
     <div className="pagination-buttons">
       <button
         className="nav-button"
         onClick={onPrevious}
-        disabled={currentPage === 0}
+        disabled={disablePrevious}
       >
         Previous
       </button>
-      <button
-        className="nav-button"
-        onClick={onNext}
-        disabled={currentPage === totalPages - 1}
-      >
+      <button className="nav-button" onClick={onNext} disabled={disableNext}>
         Next
       </button>
     </div>
   );
-};
+}
 
 export default PaginationButtons;

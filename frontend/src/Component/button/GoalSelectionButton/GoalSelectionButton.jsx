@@ -1,13 +1,11 @@
 import React from "react";
 import "./Style.css";
 
-function GoalSelectionButton({ title, onClick }) {
+function GoalSelectionButton({ title, onClick, className }) {
   return (
-    <div>
-      <button className="black-border-button" onClick={onClick}>
-        {title}
-      </button>
-    </div>
+    <button className={`black-border-button ${className}`} onClick={onClick}>
+      {title}
+    </button>
   );
 }
 

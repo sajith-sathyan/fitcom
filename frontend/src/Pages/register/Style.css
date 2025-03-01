@@ -1,25 +1,13 @@
-/* Main form container */
-.register-main {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20px;
-}
-
-/* Register card styling */
 .register-card {
-    background-color: #ffffff;
-    /* border-radius: 10px; */
-    /* box-shadow: 0 15px 40px rgba(19, 19, 19, 0.4); */
-    width: 100%;
-    max-width: 500px;
+    border-radius: 10px;
+
+    width: 500px;
+
     /* Limits width for large screens */
     padding: 30px;
     height: auto;
     margin: 20px auto;
-    transition: all 0.3s ease-in-out;
+
     justify-content: center;
 
 }

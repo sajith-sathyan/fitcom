@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../../component/navBar/Navbar";
+import Navbar from "../../component/bar/navBar/Navbar";
 
 function Goal() {
   const [selected, setSelected] = useState(0);
