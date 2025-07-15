@@ -1,4 +1,0 @@
-# Ignore RSA Key files
-lib/infrastructure/config/keys/
-lib/infrastructure/config/keys/private.pem
-lib/infrastructure/config/keys/public.pem
