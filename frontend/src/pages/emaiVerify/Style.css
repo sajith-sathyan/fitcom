@@ -1,0 +1,52 @@
+
+
+/* Centering Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Verification Card */
+.card {
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+
+/* Success Icon */
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+/* Headings */
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+/* Text */
+p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}

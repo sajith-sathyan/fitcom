@@ -1,0 +1,59 @@
+.username-enterarea {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .username-input {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 15px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #090909;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1;
+  }
+  
+  .username-lebelline {
+    position: absolute;
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px;
+    margin: 0 10px;
+    background-color: #F7F8FA;
+    transition: 0.2s ease;
+  }
+  
+  .username-input:focus,
+  .username-input:valid {
+    color: #080808;
+    border: 1px solid #66ff00;
+  }
+  
+  .username-input:focus + .username-lebelline,
+  .username-input:valid + .username-lebelline {
+    color: #5c5e5c;
+    height: 20px;
+    line-height: 20px;
+    transform: translate(-10px, -12px) scale(0.88);
+    z-index: 1;
+  }
+  
+  .error-border .username-input {
+    border: 1px solid red !important;
+  }
+  
+  .input-error {
+    border: 1px solid red !important;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  

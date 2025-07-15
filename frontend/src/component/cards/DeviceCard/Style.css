@@ -1,0 +1,82 @@
+/* Wallet Card Container */
+.wallet-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f5f4f4;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.wallet-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image Section */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+/* Product Information */
+.product-info {
+    flex-grow: 1;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-charge {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.connect-btn,
+.disconnect-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.connect-btn {
+    background-color: #007bff;
+}
+
+.connect-btn:hover {
+    background-color: #0056b3;
+}
+
+.disconnect-btn {
+    background-color: #dc3545;
+}
+
+.disconnect-btn:hover {
+    background-color: #b21f2d;
+}

@@ -1,0 +1,88 @@
+/* General styling for body */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  height: 100%; /* Ensure the body takes up the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container to center the content */
+.container {
+  text-align: center;
+  width: 600px;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Added outer shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading styles */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Buttons group */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Buttons styling */
+.btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 500px;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid black; /* Added black border around each button */
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for buttons */
+.btn:hover {
+  background-color: #1E88E5;
+}
+
+/* Active button styling */
+.btn.active {
+  background-color: #1E88E5;
+  color: white; /* Change text color to white when active */
+}
+
+/* Navigation button styling */
+.navigation-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Added space between navigation buttons */
+}
+
+.nav-btn {
+  padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #FF7043; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #1E88E5;
+}

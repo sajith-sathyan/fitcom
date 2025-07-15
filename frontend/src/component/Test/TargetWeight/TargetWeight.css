@@ -1,0 +1,72 @@
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Maximum width for the form */
+    margin: auto; /* Center the container */
+    padding: 20px;
+    background-color: white; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+h1 {
+    color: #333; /* Dark gray for the title */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.label {
+    display: block; /* Display label as block */
+    margin-bottom: 5px; /* Space below label */
+    color: #555; /* Medium gray for labels */
+}
+
+.radio-group {
+    display: flex; /* Flexbox for radio buttons */
+    flex-direction: row; /* Stack radio buttons vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 5px; /* Space above radio group */
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    margin-top: 5px; /* Space above inputs */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #FF7043; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:  #1E88E5;
+    color: white; /* Darker green on hover */
+}
+
+.navigation-buttons {
+    display: flex; /* Flexbox for navigation buttons */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above navigation buttons */
+}
+
+.info {
+    font-size: 0.9em; /* Smaller font size */
+    color: #666; /* Medium gray for info text */
+    margin: 10px 0; /* Space above and below info text */
+}

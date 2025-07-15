@@ -1,0 +1,48 @@
+/* Container for the radio button */
+.radio-container {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 2px solid #6b6361;; /* ✅ Added border */
+  border-radius: 15px;
+  padding: 8px 12px;
+  transition: border-color 0.3s ease;
+}
+
+/* Style using the new class */
+.custom-radio-input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Checked state */
+.custom-radio-input:checked {
+  border-color: #e64a19;
+  background-color: #e64a19;
+}
+
+/* Inner circle when checked */
+.custom-radio-input:checked::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Label for the radio button */
+.radio-label {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+}

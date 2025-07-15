@@ -1,0 +1,63 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.exercise-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping if screen size is small */
+    justify-content: center;
+    /* Centers items */
+    gap: 20px;
+    /* Adds space between cards */
+    padding: 20px;
+}
+
+.all-workout-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.exercise-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    /* Set a fixed width for each card */
+    padding: 15px;
+    text-align: center;
+}
+
+.exercise-card img {
+    width: 100%;
+    /* Makes the image responsive */
+    height: 150px;
+    /* Fixed height for uniformity */
+    border-radius: 8px;
+    object-fit: cover;
+    /* Ensures image fits properly */
+}
+
+.exercise-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.exercise-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .exercise-list {
+        justify-content: space-around;
+    }
+}

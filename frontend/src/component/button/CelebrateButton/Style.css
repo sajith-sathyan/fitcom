@@ -1,0 +1,27 @@
+
+
+
+
+
+
+.celebrate-btn {
+    color: rgb(0, 0, 0);
+
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+.celebrate-btn:hover {
+    color: #ffff;
+}
+
+.celebrate-btn:hover {
+    background-color: #C71729;
+}
+
+.celebrate-btn:active {
+    transform: scale(0.98);
+}

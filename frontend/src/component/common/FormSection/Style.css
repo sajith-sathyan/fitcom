@@ -1,0 +1,77 @@
+/* Form Section Styles */
+.form-container {
+    margin-bottom: 10px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block h5 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    width: 400px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+.unit-select {
+    padding: 10px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+.unit-select:hover {
+    background-color: #008080;
+    color: #f1f1f1;
+}
+
+.input-description {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+.input-field.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+}

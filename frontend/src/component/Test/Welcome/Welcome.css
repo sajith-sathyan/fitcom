@@ -1,0 +1,71 @@
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF; 
+    margin: 0;
+  }
+  
+  /* Styling the welcome content */
+  .welcome-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+  }
+  .welcome-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+}
+  
+  /* Header styles */
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #1E88E5; 
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #666; 
+    margin: 20px 0;
+  }
+  
+  /* Button styles */
+  .welcome-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #FF7043; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .welcome-button:hover {
+    background-color: #1E88E5; 
+  }
+  
+  /* Image row styles */
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0; 
+  }
+  
+ 
+  .welcome-image {
+    width: 200px; 
+    height: auto; 
+    border-radius: 8px; 
+  }
+  

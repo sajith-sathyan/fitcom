@@ -1,0 +1,56 @@
+.workout-navbar {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Align to the left */
+    gap: 15px;
+    padding-top: 30px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .workout-tab {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Ensure text doesn't break into multiple lines */
+    
+  }
+  
+  .workout-tab.active {
+    background-color: #ff5722;
+    color: white;
+    border-color: #e64a19;
+  }
+  
+  .workout-tab:hover {
+    background-color: #ff7043;
+    color: white;
+  }
+  
+  /* Make the workout-tab buttons responsive */
+  @media (max-width: 1024px) {
+    .workout-tab {
+      width: 120px; /* Adjust width for medium-sized screens */
+      font-size: 12px; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .workout-tab {
+      width: 100px; /* Adjust width for smaller screens */
+      font-size: 12px; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .workout-tab {
+      width: 90px; /* Adjust width for very small screens */
+      font-size: 10px; /* Adjust font size */
+    }
+  }
+  

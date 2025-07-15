@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: column; /* makes items stack vertically */
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  
+  

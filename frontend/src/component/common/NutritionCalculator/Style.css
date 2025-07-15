@@ -1,0 +1,236 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search Input Container */
+.all-workout-container {
+    margin-bottom: 1rem;
+}
+
+/* Nutrition Container */
+.nutrition-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 50px;
+}
+
+/* Left Side - Input Card */
+.nutrition-card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 450px;
+}
+
+.nutrition-card h3 {
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+/* Meal Timing Select */
+.nutrition-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #008080;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.nutrition-select:focus {
+    border-color: #005555;
+    outline: none;
+}
+
+/* Quantity Input */
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quantity-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quantity-input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+}
+
+/* Right Side - Nutrition Details */
+.nutrition-card-right {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Nutrition Summary */
+.total-calories {
+    width: 400px;
+    background-color: #4D804E;
+    margin-top: 70px;
+    border-radius: 30px;
+    color: #d4d4d4;
+    padding: 50px 50px 20px 50px;
+    text-align: start;
+}
+
+.total-calories h5,
+h2 {
+    color: #ffffff;
+}
+
+/* Macronutrient Items */
+.nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nutrition-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.nutrition-text h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.nutrition-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #e0dfdf;
+}
+
+.nutrition-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* Diet Optimization */
+.diet-optimization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.diet-optimization h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.diet-optimization .get-started-btn {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.get-started-btn:hover {
+    background-color: #005f5f;
+}
+
+
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity-input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.unit-select {
+    width: 30%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+
+.suggestion-list {
+    position: absolute;
+    top: 100%; /* places it just below the input */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* ensure it's above other components */
+    list-style: none;
+    margin-top: 5px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}

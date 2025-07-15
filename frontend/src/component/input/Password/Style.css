@@ -1,0 +1,68 @@
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-enterarea {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Input Field */
+.password-input {
+    width: 100%;
+    outline: none;
+    height: 45px;
+    font-size: 1rem;
+    padding: 10px 40px 10px 15px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #090909;
+    background: transparent;
+    transition: 0.2s ease;
+}
+
+/* Label (Only appears when input is empty) */
+.password-lebelline {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 1rem;
+    color: #5c5e5c;
+    background-color: transparent;
+    padding: 0 5px;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+    pointer-events: none;
+}
+
+/* Invalid Input (Red border when password is too short) */
+.password-input.invalid {
+    border: 1px solid red;
+}
+
+/* 👁️ Show/Hide Password Button */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #090909;
+}
+
+/* Error message for password validation */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}

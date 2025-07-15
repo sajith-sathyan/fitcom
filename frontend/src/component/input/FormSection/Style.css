@@ -1,0 +1,77 @@
+/* Wrap input fields in a bordered div */
+.input-block {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Input group with inline unit label */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Input field styles */
+.input-field {
+    padding: 10px;
+    border: 1px solid #121111;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    background-color: white;
+}
+
+/* Unit label next to input */
+.unit-label {
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Unit selection dropdown */
+.unit-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.unit-option {
+    padding: 5px 10px;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.unit-option:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Error message */
+.error-text {
+    color: red;
+    font-size: 14px;
+}
+
+/* Blue text for unit selection */
+.blue-text {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-container p {
+    font-size: small;
+}

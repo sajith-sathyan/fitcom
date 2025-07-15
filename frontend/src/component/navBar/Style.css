@@ -1,0 +1,118 @@
+/* General Navbar Styles */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008080;
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    /* Changed from relative to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensures the navbar spans the full width of the screen */
+    z-index: 1000;
+    /* Keeps the navbar above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow for better visibility */
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    color: #e64a19;
+    font-weight: bold;
+}
+
+
+/* Adjust the navbar-links for desktop view */
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffd700;
+}
+
+
+/* Mobile and Tablet View Styling (Up to 1024px) */
+
+@media (max-width: 1024px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #008080;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
+
+
+avbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* .navbar-links a:hover {
+    color: #ffd700;
+} */
+
+/* Active Link Color */
+.navbar-links a.active {
+    color: #ffd700;
+    /* Change to your preferred color */
+    /* font-weight: bold; */
+    /* Optional underline effect */
+}
+
+
+/* Hide the menu-toggle button on larger screens */
+
+@media (min-width: 1025px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.main-content {
+    margin-top: 60px;
+    /* Matches the height of the navbar */
+    padding: 1rem;
+}

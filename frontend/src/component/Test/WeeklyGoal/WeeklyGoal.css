@@ -1,0 +1,78 @@
+/* WeeklyGoal.css */
+
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Highlight the selected button */
+  .selected {
+    background-color: #1E88E5; /* Green background for selected */
+    color: white; /* White text for contrast */
+    border: 2px solid #4caf50; /* Thicker border for emphasis */
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .back-btn,
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .back-btn {
+    background-color: #f44336; /* Red color for back button */
+    color: white;
+  }
+  
+  .submit-btn {
+    background-color: #4caf50; /* Green color for submit button */
+    color: white;
+  }
+  

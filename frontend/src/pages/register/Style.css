@@ -1,0 +1,206 @@
+
+  
+   /* Center the card in the viewport */
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.register-card {
+    border-radius: 10px;
+    width: 500px;
+    padding: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Optional: Ensures contrast */
+}
+    .register-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        /* Adds space between input fields */
+    }
+
+    /* Heading styling */
+    .register-h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Container width for responsiveness */
+
+
+   /* Alert Messages */
+.alert {
+    padding: 12px;
+    margin: 10px 0 20px 0; /* Added bottom margin */
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Error Message */
+.alert.error {
+    color: #fff;
+    background-color: #dc3545; /* Red */
+    border: 1px solid #c82333;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Success Message */
+.success-message {
+    padding: 12px;
+    color: #fff;
+    background-color: #28a745; /* Green */
+    border: 1px solid #218838;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 20px 0; /* Added bottom margin */
+    animation: fadeIn 0.5s ease-in-out;
+}
+.submit-button{
+    background-color: #005ff7;
+
+}
+.submit-button.active {
+    background-color: #184793;
+    color: white;
+    border-color: #e64a19;
+}
+
+.submit-button:hover {
+    background-color: #ff7043;
+    color: white;
+}
+.btn-165 {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.5rem;
+    border: 1px solid #bebebe;
+    gap: 10px;
+    color: #414141;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /*** full width block ***/
+    /* width: 100%; */
+}
+
+.btn-165 svg {
+    height: 24px;
+}
+
+.btn-165:hover {
+    border: solid 1px #464545;
+}
+
+.btn-165:active {
+    margin-top: 1px;
+}
+
+/*** disabled style ***/
+.btn-165:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #dcdcdc;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.github-button {
+    padding-top: 0.5rem;        /* py-2 */
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;         /* px-4 */
+    padding-right: 1rem;
+    max-width: 28rem;           /* max-w-md */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B5563;  /* bg-gray-600 */
+    color: white;               /* text-white */
+    width: 100%;                /* w-full */
+    text-align: center;         /* text-center */
+    font-size: 1rem;            /* text-base */
+    font-weight: 600;           /* font-semibold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* shadow-md */
+    border-radius: 0.5rem;      /* rounded-lg */
+    transition: all 0.2s ease-in; /* transition ease-in duration-200 */
+    outline: none;              /* focus:outline-none */
+  }
+  
+  .github-button:hover {
+    background-color: #374151;  /* hover:bg-gray-700 */
+  }
+  
+  .github-button:focus {
+    box-shadow:
+      0 0 0 2px #6B7280,       /* focus:ring-2 focus:ring-gray-500 */
+      0 0 0 4px #E5E7EB;       /* focus:ring-offset-2 focus:ring-offset-gray-200 */
+  }
+  
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-5px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .register-card {
+            width: 90%;
+            /* Reduce width for tablets */
+            padding: 20px;
+        }
+
+        .register-h1 {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .register-card {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .register-h1 {
+            font-size: 20px;
+        }
+    }
+
+
+    .success-message {
+        color: green;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .alert.error {
+        color: red;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }

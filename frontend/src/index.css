@@ -1,0 +1,481 @@
+/* Reset some default browser styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  width: 100%;
+  height: 100%;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* Use a modern, clean font */
+  background-color: #f7f8fa;
+  /* Light background for a fresh, clean look */
+  color: #333;
+  /* Neutral color for text */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+/* Global link styles */
+
+a {
+  color: #2d9cdb;
+  /* A bright blue for links to stand out */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a7bbf;
+}
+
+
+/* Utility classes for spacing and layout */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* Button styling */
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.primary {
+  background-color: #2d9cdb;
+  color: #fff;
+}
+
+button.primary:hover {
+  background-color: #1a7bbf;
+}
+
+
+/* Base styles for headings and text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #222;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+
+/* Custom scroll bar styling (optional) */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d9cdb;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a7bbf;
+}
+
+
+/* Utility classes for margin and padding */
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+
+/* Flexbox utilities for layout */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Image styles */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Footer styling */
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #333;
+  color: #f7f8fa;
+}
+
+footer a {
+  color: #2d9cdb;
+}
+
+footer a:hover {
+  color: #1a7bbf;
+}
+
+
+/*  ---------------------------------------------  NAVBAR -----------------------------------------------*/
+
+
+/*  --------------------------------------------- register -----------------------------------------------*/
+
+/*  ---------------------------------------------  CARD -----------------------------------------------*/
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
+  margin-bottom: 20px;
+}
+
+.card-item h3 {
+  font-size: 18px;
+  color: #555;
+}
+
+.card-item p {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+/* Optional: Style for a button or any action like "Track More" */
+
+.card-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+
+/*  ---------------------------------------------  CaloriesChart.css -----------------------------------------------*/
+
+
+/* src/components/CaloriesChart.css */
+
+.calories-chart {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.circle-chart {
+  transform: rotate(-90deg);
+}
+
+.circle-chart-bg {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 2;
+}
+
+.circle-chart-fill {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease;
+  stroke: #4caf50;
+  /* Color for the filled portion */
+}
+
+
+/*  ---------------------------------------------  CaloriesInfo.css -----------------------------------------------*/
+
+
+/* src/components/CaloriesInfo.css */
+
+.calories-info {
+  text-align: left;
+  font-size: 16px;
+}
+
+.calories-info p {
+  margin: 5px 0;
+}
+
+.calories-info strong {
+  color: #333;
+}
+
+
+/*  ---------------------------------------------  CalorieCard.css -----------------------------------------------*/
+
+
+/* src/components/CalorieCard.css */
+
+.calories {
+  background-color: #cfcfcf;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(19, 19, 19, 0.1);
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.calories-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1200px) {
+
+  /* Laptops */
+  .calories {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Tablets */
+  .calories {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .calories-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Smartphones */
+  .calories {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+
+/*  ---------------------------------------------  Banner.css -----------------------------------------------*/
+
+
+/* src/styles.css or your relevant CSS file */
+
+/*  ---------------------------------------------  MacrosCard.css -----------------------------------------------*/
+
+.macroscard {
+  width: 800px;
+  margin: 20px auto;
+  height: 300px;
+  box-shadow: 0 4px 18px rgba(19, 19, 19, 0.1);
+  border-radius: 10px;
+  background: #2d9cdb;
+}
+
+/*  ---------------------------------------------  workout page.css -----------------------------------------------*/
+
+
+
+
+/*  ---------------------------------------------  Workoutcard.css -----------------------------------------------*/
+
+
+
+/*  ---------------------------------------------  all-workout.css -----------------------------------------------*/
+
+.all-workout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  ---------------------------------------------  SearchBox.css -----------------------------------------------*/
+
+
+
+/* When input is active (has text), change border color */
+
+
+
+
+
+
+
+
+/*  ---------------------------------------------  Goal.css -----------------------------------------------*/
+
+.goal-main-container {
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  height: 100vh;
+  /* Full viewport height */
+  margin: 0;
+  /* Remove margin if needed */
+}
+
+.goal-card {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.goal-card:hover {
+  background-color: #ff7043;
+  /* Change background on hover */
+  color: white;
+  /* Change text color on hover */
+}
+
+.goal-card:hover h5 {
+  color: white;
+  /* Ensure <h5> text color changes */
+}
+
+.page {
+  align-items: center;
+  justify-content: center;
+}
