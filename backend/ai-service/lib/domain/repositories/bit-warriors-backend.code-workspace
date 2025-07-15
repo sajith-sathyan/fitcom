@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "bit-warriors-backend",
+			"path": "../../../../../../bit-warriors-backend"
+		},
+		{
+			"name": "fitcom",
+			"path": "../../../../.."
+		},
+		{
+			"path": "../../../../../../TestFolder"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
